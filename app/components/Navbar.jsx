@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="flex items-center overflow-hidden">
+            <div className="flex items-center overflow-hidden bg-none">
               <Image
                 src="/logo.jpg"
                 width={80}
