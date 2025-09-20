@@ -15,16 +15,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <div className="flex items-center overflow-hidden bg-none">
-              <Image
-                src="/logo.jpg"
-                width={80}
-                height={80}
-                alt="logo"
-                className="border overflow-y-hidden"
-              />
-            </div>
+          <div className="flex items-center overflow-hidden bg-none">
+            <Image src="/logo.png" width={80} height={80} alt="logo" />
           </div>
 
           {/* Desktop Menu */}
@@ -53,7 +45,7 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="text-black hover:text-gray-800 transition-colors duration-200 font-medium flex items-center space-x-1"
+                  className="text-green-800 hover:text-green-600 transition-colors duration-200 font-medium flex items-center space-x-1"
                 >
                   <span>Dashboard</span>
                   <ChevronDown
@@ -91,8 +83,8 @@ const Navbar = () => {
 
           {/* Auth Button */}
           <div className="hidden md:block">
-            <button className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-blue-600 hover:to-green-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-md">
-              Sign Up / Login
+            <button className="bg-green-800 text-white px-6 py-2 rounded-full font-medium transition-all duration-200 transform hover:scale-105 shadow-md">
+              Sign Up
             </button>
           </div>
 
@@ -174,8 +166,8 @@ const Navbar = () => {
             </div>
 
             <div className="pt-4 border-t border-white/20">
-              <button className="w-full bg-gradient-to-r from-green-500 to-blue-600 hover:from-blue-600 hover:to-green-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 shadow-md">
-                Sign Up / Login
+              <button className="w-full bg-green-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 shadow-md">
+                Sign Up
               </button>
             </div>
           </div>
