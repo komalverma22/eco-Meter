@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function SignInPage() {
@@ -194,22 +195,15 @@ export default function SignInPage() {
       </div>
 
       {/* Right Section - Decorative Background */}
-      <div className="flex-1 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-600/20"></div>
-        
-        {/* Abstract Shapes */}
-        <div className="absolute top-20 right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-pink-300/20 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-yellow-200/20 rounded-full blur-xl"></div>
-        
-        {/* Simple geometric pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-white rounded-lg rotate-45"></div>
-          <div className="absolute top-3/4 right-1/4 w-16 h-16 border border-white rounded-full"></div>
-          <div className="absolute top-1/2 right-1/3 w-12 h-12 bg-white rounded"></div>
-        </div>
-      </div>
+      <div className="flex-1 relative overflow-hidden">
+      <Image
+        src="/signupbg.jpg" // put image inside public folder
+        alt="Background"
+        fill
+        className="object-cover"
+        priority // loads quickly
+      />
+    </div>
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');

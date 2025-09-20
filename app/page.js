@@ -1,52 +1,16 @@
-'use client';
-import Image from 'next/image';
-import bgImage from '../public/landing-bg.jpg';
-// import LandingPage from './components/LandingPage';
-// import TextGenerate from './components/TextGenerate';
-// import Features from './components/Feature';
-// import FAQ from './components/FAQ';
-// import FooterThird from './components/Footer';
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+import Faq from "./components/Faq";
 export default function Home() {
   return (
-    <div className='overflow-x-hidden'>
- <div className="relative h-screen w-screen ">
- <Image
-  src={bgImage}
-  alt="Background"
-  fill
-  className="hidden sm:block object-cover  "
-  priority
-  quality={100}
-/>
-   {/* <Image
-    src="/landing_bg_phone.png"
-    alt="Background Mobile"
-    fill
-    className="block sm:hidden object-cover object-center mask-image-gradient"
-    priority
-    quality={100}
-  /> */}
-  {/* Your content here */}
-
-
-    
-     {/* <LandingPage/> */}
-     
-      </div>
-      <div className='absolute left-1/2 -translate-x-1/2 -bottom-66 md:-bottom-145 w-[80%] md:w-[100%] max-w-[1000px] z-0 drop-shadow-xl '>
-        {/* <TextGenerate/> */}
-     
-      
-      </div>
-     <div className=''>
-         {/* <Features/> */}
-     </div>
-     <div>
-      {/* <FAQ/> */}
-     </div>
-     <div>
-      {/* <FooterThird/> */}
-     </div>
-  </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Faq/>
+      <Footer/>
+    </>
   );
 }

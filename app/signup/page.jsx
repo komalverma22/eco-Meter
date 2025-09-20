@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function SignUpPage() {
@@ -78,7 +79,15 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left Section - Decorative Background */}
-      <div className="flex-1 bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 relative overflow-hidden">
+<div className="flex-1 relative overflow-hidden">
+      <Image
+        src="/signupbg.jpg" // put image inside public folder
+        alt="Background"
+        fill
+        className="object-cover" // covers entire div
+        priority // loads quickly
+      />
+    {/* </div>="flex-1 bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 relative overflow-hidden"> */}
         {/* Decorative Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-pink-600/20"></div>
         
