@@ -37,25 +37,27 @@ const Navbar = () => {
                 Home
               </Link>
               <a
-                href="#"
+                href="#feature"
                 className="text-black hover:text-gray-800 transition-colors duration-200 font-medium"
               >
                 Features
               </a>
               <a
-                href="#"
+                href="#faq"
                 className="text-black hover:text-gray-800 transition-colors duration-200 font-medium"
               >
-                How it Works
+                FAQ
               </a>
 
               {/* Dashboard Dropdown */}
+
               <div className="relative">
+                
                 <button
                   onClick={toggleDropdown}
                   className="text-green-800 hover:text-green-600 transition-colors duration-200 font-medium flex items-center space-x-1"
                 >
-                  <span>Dashboard</span>
+                  <Link href="/dashboard">Dashboard</Link>
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
                       dropdownOpen ? "rotate-180" : ""
@@ -118,20 +120,20 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white/10 backdrop-blur-lg border-t border-white/20 shadow-lg">
           <div className="px-4 pt-2 pb-3 space-y-1">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="block px-3 py-2 text-black hover:text-gray-800 hover:bg-white/20 rounded-md transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
             <a
-              href="feature"
+              href="#feature"
               className="block px-3 py-2 text-black hover:text-gray-800 hover:bg-white/20 rounded-md transition-colors duration-200"
             >
               Features
             </a>
             <a
-              href="faq"
+              href="#faq"
               className="block px-3 py-2 text-black hover:text-gray-800 hover:bg-white/20 rounded-md transition-colors duration-200"
             >
               FAQ
@@ -139,6 +141,7 @@ const Navbar = () => {
 
             {/* Mobile Dashboard Dropdown */}
             <div>
+                <Link href="/dashboard">
               <button
                 onClick={toggleDropdown}
                 className="w-full text-left px-3 py-2 text-black hover:text-gray-800 hover:bg-white/20 rounded-md transition-colors duration-200 flex items-center justify-between"
@@ -150,6 +153,7 @@ const Navbar = () => {
                   }`}
                 />
               </button>
+              </Link>
 
               {dropdownOpen && (
                 <div className="pl-6 space-y-1 mt-1">
@@ -176,9 +180,11 @@ const Navbar = () => {
             </div>
 
             <div className="pt-4 border-t border-white/20">
+            <Link href="/signup">
               <button className="w-full  text-white px-6 py-3 rounded-full font-medium transition-all duration-200 shadow-md">
-                Sign Up / Login
+                Sign Up
               </button>
+              </Link>
             </div>
           </div>
         </div>
