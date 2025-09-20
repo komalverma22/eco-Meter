@@ -7,7 +7,7 @@ export default function CarbonFootprintCalculator() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-600 via-green-700 to-green-800 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen pt-30 bg-gradient-to-br from-green-500 via-green-700 to-green-800 flex items-center justify-center p-4 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
