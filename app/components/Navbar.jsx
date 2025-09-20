@@ -53,7 +53,7 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="text-black hover:text-gray-800 transition-colors duration-200 font-medium flex items-center space-x-1"
+                  className="text-green-800 hover:text-green-600 transition-colors duration-200 font-medium flex items-center space-x-1"
                 >
                   <span>Dashboard</span>
                   <ChevronDown
